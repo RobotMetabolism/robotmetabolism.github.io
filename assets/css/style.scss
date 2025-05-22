@@ -1,0 +1,200 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+// Custom header with background image instead of gradient
+.page-header {
+  background-color: #333;
+  background-image: url('../images/robot-header.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+// Add a dark overlay to make text more readable
+.page-header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+// Move header content above the overlay
+.project-name, .project-tagline, .page-header .btn {
+  position: relative;
+  z-index: 2;
+}
+
+// Container styling
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+// Authors section styling
+.authors-container {
+  margin: 2rem 0;
+  text-align: center;
+  padding: 1.5rem;
+  background-color: #f8f9fa;
+  border-radius: 5px;
+}
+
+.authors-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 1.5rem;
+}
+
+.author-item {
+  padding: 8px 12px;
+  background-color: #ffffff;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  transition: all 0.2s ease;
+  
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+  }
+}
+
+.author-name {
+  font-weight: 500;
+  color: #333;
+}
+
+.affiliations {
+  text-align: left;
+  margin-top: 1.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid #e9ecef;
+  
+  p {
+    margin: 0.3rem 0;
+    font-size: 0.9rem;
+    color: #666;
+  }
+}
+
+// Content styling
+.paper-content {
+  margin: 2rem 0;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.abstract {
+  background-color: #f8f9fa;
+  padding: 1.5rem;
+  margin: 2rem 0;
+  border-left: 4px solid #159957;
+}
+
+// Figures and captions
+.figure {
+  margin: 2rem 0;
+  text-align: center;
+}
+
+.figure img {
+  max-width: 100%;
+  height: auto;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  border-radius: 4px;
+}
+
+.figure-caption {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  color: #666;
+  text-align: center;
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+// Video section
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+  margin: 2rem 0;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+// Citations and references
+.citation {
+  font-family: monospace;
+  background-color: #f8f9fa;
+  padding: 15px;
+  border-radius: 4px;
+  overflow-x: auto;
+  font-size: 0.85rem;
+}
+
+// Section styling
+.section-heading {
+  margin-top: 3rem;
+  color: #159957;
+  border-bottom: 2px solid #eff0f1;
+  padding-bottom: 0.5rem;
+}
+
+// Categories
+.categories {
+  margin: 1.5rem 0;
+  text-align: center;
+}
+
+.category-tag {
+  display: inline-block;
+  padding: 6px 12px;
+  margin: 0 5px 10px;
+  background-color: rgba(21, 153, 87, 0.1);
+  color: #159957;
+  border-radius: 30px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  
+  &:hover {
+    background-color: rgba(21, 153, 87, 0.2);
+  }
+}
+
+// Footer styling
+.site-footer {
+  padding-top: 2rem;
+  margin-top: 4rem;
+  border-top: 1px solid #eff0f1;
+  
+  .site-footer-owner {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+  
+  .site-footer-credits {
+    color: #819198;
+    font-size: 0.9rem;
+  }
+}

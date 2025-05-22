@@ -1,0 +1,7 @@
+title: Robot Metabolism
+description: Towards machines that can grow by consuming other machines
+remote_theme: pages-themes/cayman@v0.2.0
+plugins:
+  - jekyll-remote-theme
+show_downloads: true
+google_analytics: G-0X35RLW1XQ # Replace with your actual Google Analytics tracking ID if needed
