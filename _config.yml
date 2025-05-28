@@ -1,6 +1,8 @@
 title: Robot Metabolism
 description: Towards machines that can grow by consuming other machines
 remote_theme: pages-themes/cayman@v0.2.0
+include:
+  - assets/images
 plugins:
   - jekyll-remote-theme
 show_downloads: true
