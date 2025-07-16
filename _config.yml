@@ -1,6 +1,11 @@
 title: Robot Metabolism
 description: Towards machines that can grow by consuming other machines
 remote_theme: pages-themes/cayman@v0.2.0
+baseurl: ""
+url: "https://robotmetabolism.github.io"
+github:
+  repository_name: "robotmetabolism.github.io"
+  repository_url: "https://github.com/RobotMetabolism/robotmetabolism.github.io"
 include:
   - assets/images
 plugins:
